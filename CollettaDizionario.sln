@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollettaDizionario", "CollettaDizionario\CollettaDizionario.csproj", "{AA322152-0171-4A62-8A55-A013D1809B1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA322152-0171-4A62-8A55-A013D1809B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA322152-0171-4A62-8A55-A013D1809B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA322152-0171-4A62-8A55-A013D1809B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA322152-0171-4A62-8A55-A013D1809B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {606BB5D2-0B55-419B-B462-A315A4188A8F}
+	EndGlobalSection
+EndGlobal

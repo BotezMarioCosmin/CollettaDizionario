@@ -53,11 +53,11 @@ namespace CollettaDizionario
             {
                 try
                 {
-                    colletta.Add(textBoxNome.Text, int.Parse(textBoxImporto.Text));
+                    colletta.Add(textBoxNome.Text, float.Parse(textBoxImporto.Text));
                     string[] row = { textBoxNome.Text, textBoxImporto.Text };
                     var listViewItem = new ListViewItem(row);
                     listView1.Items.Add(listViewItem);
-                    refreshTotal(colletta);
+                    listViewRefresh(colletta);
                 }
                 catch
                 {
@@ -76,9 +76,6 @@ namespace CollettaDizionario
             {
                 try
                 {
-                    float importo = colletta[textBoxNome.Text];
-                    string[] row = new string[] { textBoxNome.Text, Convert.ToString(importo) };
-                    var listViewItem = new ListViewItem(row);
                     colletta.Remove(textBoxNome.Text);
                     listViewRefresh(colletta);
                     refreshTotal(colletta);
@@ -98,13 +95,22 @@ namespace CollettaDizionario
             {
                 try
                 {
-                    refreshTotal(colletta);
-                    //
+                    string nome = textBoxNome.Text;
+                    colletta.Remove(nome);
+                    colletta.Add(textBoxNome.Text, float.Parse(textBoxImporto.Text));
+                    string[] row = { textBoxNome.Text, textBoxImporto.Text };
+                    var listViewItem = new ListViewItem(row);
+                    listView1.Items.Add(listViewItem);
+                    listViewRefresh(colletta);
                 }
                 catch
                 {
                     MessageBox.Show("Persona inesistente.");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Inserire il nome e il nuovo importo.");
             }
         }
 

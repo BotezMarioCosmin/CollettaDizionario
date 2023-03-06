@@ -30,14 +30,14 @@
         {
             this.labelTotal = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.buttonTotale = new System.Windows.Forms.Button();
             this.textBoxTotale = new System.Windows.Forms.TextBox();
             this.textBoxImporto = new System.Windows.Forms.TextBox();
             this.buttonAggiungi = new System.Windows.Forms.Button();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.buttonCancella = new System.Windows.Forms.Button();
+            this.buttonModifica = new System.Windows.Forms.Button();
+            this.labelTotaleVersato = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelTotal
@@ -52,9 +52,6 @@
             // 
             // listView1
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(12, 80);
             this.listView1.Name = "listView1";
@@ -62,16 +59,6 @@
             this.listView1.TabIndex = 4;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Nome";
-            this.columnHeader1.Width = 150;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Importo";
-            this.columnHeader2.Width = 150;
             // 
             // buttonTotale
             // 
@@ -134,11 +121,34 @@
             this.buttonCancella.UseVisualStyleBackColor = true;
             this.buttonCancella.Click += new System.EventHandler(this.buttonCancella_Click);
             // 
+            // buttonModifica
+            // 
+            this.buttonModifica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonModifica.Location = new System.Drawing.Point(770, 150);
+            this.buttonModifica.Name = "buttonModifica";
+            this.buttonModifica.Size = new System.Drawing.Size(196, 53);
+            this.buttonModifica.TabIndex = 11;
+            this.buttonModifica.Text = "Modifica";
+            this.buttonModifica.UseVisualStyleBackColor = true;
+            this.buttonModifica.Click += new System.EventHandler(this.buttonModifica_Click);
+            // 
+            // labelTotaleVersato
+            // 
+            this.labelTotaleVersato.AutoSize = true;
+            this.labelTotaleVersato.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotaleVersato.Location = new System.Drawing.Point(363, 232);
+            this.labelTotaleVersato.Name = "labelTotaleVersato";
+            this.labelTotaleVersato.Size = new System.Drawing.Size(255, 37);
+            this.labelTotaleVersato.TabIndex = 12;
+            this.labelTotaleVersato.Text = "Totale versato: 0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 544);
+            this.Controls.Add(this.labelTotaleVersato);
+            this.Controls.Add(this.buttonModifica);
             this.Controls.Add(this.buttonCancella);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.textBoxImporto);
@@ -158,14 +168,14 @@
         #endregion
         private System.Windows.Forms.Label labelTotal;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Button buttonTotale;
         private System.Windows.Forms.TextBox textBoxTotale;
         private System.Windows.Forms.TextBox textBoxImporto;
         private System.Windows.Forms.Button buttonAggiungi;
         private System.Windows.Forms.TextBox textBoxNome;
         private System.Windows.Forms.Button buttonCancella;
+        private System.Windows.Forms.Button buttonModifica;
+        private System.Windows.Forms.Label labelTotaleVersato;
     }
 }
 
